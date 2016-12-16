@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE77E05F1E03DCB900CC9FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E05E1E03DCB900CC9FBD /* main.m */; };
+		BE77E0621E03DCB900CC9FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0611E03DCB900CC9FBD /* AppDelegate.m */; };
+		BE77E0651E03DCB900CC9FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0641E03DCB900CC9FBD /* ViewController.m */; };
+		BE77E0681E03DCB900CC9FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE77E0661E03DCB900CC9FBD /* Main.storyboard */; };
+		BE77E06A1E03DCB900CC9FBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE77E0691E03DCB900CC9FBD /* Assets.xcassets */; };
+		BE77E06D1E03DCB900CC9FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE77E06B1E03DCB900CC9FBD /* LaunchScreen.storyboard */; };
+		BE77E0781E03DCBA00CC9FBD /* TenorGifSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0771E03DCBA00CC9FBD /* TenorGifSearchTests.m */; };
+		BE77E0831E03DCBA00CC9FBD /* TenorGifSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0821E03DCBA00CC9FBD /* TenorGifSearchUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE77E0741E03DCBA00CC9FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE77E0521E03DCB900CC9FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE77E0591E03DCB900CC9FBD;
+			remoteInfo = TenorGifSearch;
+		};
+		BE77E07F1E03DCBA00CC9FBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE77E0521E03DCB900CC9FBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE77E0591E03DCB900CC9FBD;
+			remoteInfo = TenorGifSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE77E05A1E03DCB900CC9FBD /* TenorGifSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenorGifSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE77E05E1E03DCB900CC9FBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE77E0601E03DCB900CC9FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE77E0611E03DCB900CC9FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE77E0631E03DCB900CC9FBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE77E0641E03DCB900CC9FBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE77E0671E03DCB900CC9FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE77E0691E03DCB900CC9FBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE77E06C1E03DCB900CC9FBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE77E06E1E03DCB900CC9FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE77E0731E03DCBA00CC9FBD /* TenorGifSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenorGifSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE77E0771E03DCBA00CC9FBD /* TenorGifSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenorGifSearchTests.m; sourceTree = "<group>"; };
+		BE77E0791E03DCBA00CC9FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE77E07E1E03DCBA00CC9FBD /* TenorGifSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenorGifSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE77E0821E03DCBA00CC9FBD /* TenorGifSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenorGifSearchUITests.m; sourceTree = "<group>"; };
+		BE77E0841E03DCBA00CC9FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE77E0571E03DCB900CC9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E0701E03DCBA00CC9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E07B1E03DCBA00CC9FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE77E0511E03DCB900CC9FBD = {
+			isa = PBXGroup;
+			children = (
+				BE77E05C1E03DCB900CC9FBD /* TenorGifSearch */,
+				BE77E0761E03DCBA00CC9FBD /* TenorGifSearchTests */,
+				BE77E0811E03DCBA00CC9FBD /* TenorGifSearchUITests */,
+				BE77E05B1E03DCB900CC9FBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE77E05B1E03DCB900CC9FBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E05A1E03DCB900CC9FBD /* TenorGifSearch.app */,
+				BE77E0731E03DCBA00CC9FBD /* TenorGifSearchTests.xctest */,
+				BE77E07E1E03DCBA00CC9FBD /* TenorGifSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE77E05C1E03DCB900CC9FBD /* TenorGifSearch */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E0601E03DCB900CC9FBD /* AppDelegate.h */,
+				BE77E0611E03DCB900CC9FBD /* AppDelegate.m */,
+				BE77E0631E03DCB900CC9FBD /* ViewController.h */,
+				BE77E0641E03DCB900CC9FBD /* ViewController.m */,
+				BE77E0661E03DCB900CC9FBD /* Main.storyboard */,
+				BE77E0691E03DCB900CC9FBD /* Assets.xcassets */,
+				BE77E06B1E03DCB900CC9FBD /* LaunchScreen.storyboard */,
+				BE77E06E1E03DCB900CC9FBD /* Info.plist */,
+				BE77E05D1E03DCB900CC9FBD /* Supporting Files */,
+			);
+			path = TenorGifSearch;
+			sourceTree = "<group>";
+		};
+		BE77E05D1E03DCB900CC9FBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E05E1E03DCB900CC9FBD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE77E0761E03DCBA00CC9FBD /* TenorGifSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E0771E03DCBA00CC9FBD /* TenorGifSearchTests.m */,
+				BE77E0791E03DCBA00CC9FBD /* Info.plist */,
+			);
+			path = TenorGifSearchTests;
+			sourceTree = "<group>";
+		};
+		BE77E0811E03DCBA00CC9FBD /* TenorGifSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E0821E03DCBA00CC9FBD /* TenorGifSearchUITests.m */,
+				BE77E0841E03DCBA00CC9FBD /* Info.plist */,
+			);
+			path = TenorGifSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE77E0591E03DCB900CC9FBD /* TenorGifSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE77E0871E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearch" */;
+			buildPhases = (
+				BE77E0561E03DCB900CC9FBD /* Sources */,
+				BE77E0571E03DCB900CC9FBD /* Frameworks */,
+				BE77E0581E03DCB900CC9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenorGifSearch;
+			productName = TenorGifSearch;
+			productReference = BE77E05A1E03DCB900CC9FBD /* TenorGifSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE77E0721E03DCBA00CC9FBD /* TenorGifSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE77E08A1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchTests" */;
+			buildPhases = (
+				BE77E06F1E03DCBA00CC9FBD /* Sources */,
+				BE77E0701E03DCBA00CC9FBD /* Frameworks */,
+				BE77E0711E03DCBA00CC9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE77E0751E03DCBA00CC9FBD /* PBXTargetDependency */,
+			);
+			name = TenorGifSearchTests;
+			productName = TenorGifSearchTests;
+			productReference = BE77E0731E03DCBA00CC9FBD /* TenorGifSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE77E07D1E03DCBA00CC9FBD /* TenorGifSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE77E08D1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchUITests" */;
+			buildPhases = (
+				BE77E07A1E03DCBA00CC9FBD /* Sources */,
+				BE77E07B1E03DCBA00CC9FBD /* Frameworks */,
+				BE77E07C1E03DCBA00CC9FBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE77E0801E03DCBA00CC9FBD /* PBXTargetDependency */,
+			);
+			name = TenorGifSearchUITests;
+			productName = TenorGifSearchUITests;
+			productReference = BE77E07E1E03DCBA00CC9FBD /* TenorGifSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE77E0521E03DCB900CC9FBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "RAHUL'S MAC MINI";
+				TargetAttributes = {
+					BE77E0591E03DCB900CC9FBD = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					BE77E0721E03DCBA00CC9FBD = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE77E0591E03DCB900CC9FBD;
+					};
+					BE77E07D1E03DCBA00CC9FBD = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE77E0591E03DCB900CC9FBD;
+					};
+				};
+			};
+			buildConfigurationList = BE77E0551E03DCB900CC9FBD /* Build configuration list for PBXProject "TenorGifSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE77E0511E03DCB900CC9FBD;
+			productRefGroup = BE77E05B1E03DCB900CC9FBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE77E0591E03DCB900CC9FBD /* TenorGifSearch */,
+				BE77E0721E03DCBA00CC9FBD /* TenorGifSearchTests */,
+				BE77E07D1E03DCBA00CC9FBD /* TenorGifSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE77E0581E03DCB900CC9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE77E06D1E03DCB900CC9FBD /* LaunchScreen.storyboard in Resources */,
+				BE77E06A1E03DCB900CC9FBD /* Assets.xcassets in Resources */,
+				BE77E0681E03DCB900CC9FBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E0711E03DCBA00CC9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E07C1E03DCBA00CC9FBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE77E0561E03DCB900CC9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE77E0651E03DCB900CC9FBD /* ViewController.m in Sources */,
+				BE77E0621E03DCB900CC9FBD /* AppDelegate.m in Sources */,
+				BE77E05F1E03DCB900CC9FBD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E06F1E03DCBA00CC9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE77E0781E03DCBA00CC9FBD /* TenorGifSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE77E07A1E03DCBA00CC9FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE77E0831E03DCBA00CC9FBD /* TenorGifSearchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE77E0751E03DCBA00CC9FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE77E0591E03DCB900CC9FBD /* TenorGifSearch */;
+			targetProxy = BE77E0741E03DCBA00CC9FBD /* PBXContainerItemProxy */;
+		};
+		BE77E0801E03DCBA00CC9FBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE77E0591E03DCB900CC9FBD /* TenorGifSearch */;
+			targetProxy = BE77E07F1E03DCBA00CC9FBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE77E0661E03DCB900CC9FBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE77E0671E03DCB900CC9FBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE77E06B1E03DCB900CC9FBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE77E06C1E03DCB900CC9FBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE77E0851E03DCBA00CC9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE77E0861E03DCBA00CC9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE77E0881E03DCBA00CC9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TenorGifSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE77E0891E03DCBA00CC9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TenorGifSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BE77E08B1E03DCBA00CC9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TenorGifSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenorGifSearch.app/TenorGifSearch";
+			};
+			name = Debug;
+		};
+		BE77E08C1E03DCBA00CC9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TenorGifSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenorGifSearch.app/TenorGifSearch";
+			};
+			name = Release;
+		};
+		BE77E08E1E03DCBA00CC9FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TenorGifSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TenorGifSearch;
+			};
+			name = Debug;
+		};
+		BE77E08F1E03DCBA00CC9FBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TenorGifSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TenorGifSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE77E0551E03DCB900CC9FBD /* Build configuration list for PBXProject "TenorGifSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE77E0851E03DCBA00CC9FBD /* Debug */,
+				BE77E0861E03DCBA00CC9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE77E0871E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE77E0881E03DCBA00CC9FBD /* Debug */,
+				BE77E0891E03DCBA00CC9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE77E08A1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE77E08B1E03DCBA00CC9FBD /* Debug */,
+				BE77E08C1E03DCBA00CC9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE77E08D1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE77E08E1E03DCBA00CC9FBD /* Debug */,
+				BE77E08F1E03DCBA00CC9FBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE77E0521E03DCB900CC9FBD /* Project object */;
+}
