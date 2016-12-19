@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "TenorSearchHandler.h"
+#import "TenorCollectionViewCell.h"
+#import "TenorGifResponse.h"
+#import "UIImage+animatedGIF.h"
+#import "GifSelectViewControlller.h"
+@interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UISearchBarDelegate>{
+    TenorSearchHandler *handler;
+    
+}
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBarC;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 
 @end

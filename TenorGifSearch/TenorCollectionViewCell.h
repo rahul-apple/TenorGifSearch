@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AsyncImageView/AsyncImageView.h>
+#import <FLAnimatedImage/FLAnimatedImage.h>
 @interface TenorCollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet FLAnimatedImageView *imgView;
 
 @end

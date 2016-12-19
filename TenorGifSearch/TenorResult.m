@@ -181,7 +181,7 @@ NSString *const kTenorResultUrl = @"url";
 {
 	TenorResult *copy = [TenorResult new];
 
-	copy.composite = [self.composite copyWithZone:zone];
+	copy.composite = self.composite;
 	copy.created = self.created;
 	copy.hasaudio = self.hasaudio;
 	copy.hascaption = self.hascaption;

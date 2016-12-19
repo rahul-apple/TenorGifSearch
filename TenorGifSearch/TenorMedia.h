@@ -35,4 +35,5 @@
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)toDictionary;
+- (instancetype)copyWithZone:(NSZone *)zone;
 @end

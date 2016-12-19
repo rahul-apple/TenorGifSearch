@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66C723C4A846D649221E1D60 /* libPods-TenorGifSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2164CFD060E1ED9DBE77E3B3 /* libPods-TenorGifSearchTests.a */; };
+		AD7DFC8ABEDE6B697DFB34B2 /* libPods-TenorGifSearchUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E79764615F48C25F172A3EF /* libPods-TenorGifSearchUITests.a */; };
 		BE77E05F1E03DCB900CC9FBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E05E1E03DCB900CC9FBD /* main.m */; };
 		BE77E0621E03DCB900CC9FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0611E03DCB900CC9FBD /* AppDelegate.m */; };
 		BE77E0651E03DCB900CC9FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0641E03DCB900CC9FBD /* ViewController.m */; };
@@ -15,6 +17,18 @@
 		BE77E06D1E03DCB900CC9FBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE77E06B1E03DCB900CC9FBD /* LaunchScreen.storyboard */; };
 		BE77E0781E03DCBA00CC9FBD /* TenorGifSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0771E03DCBA00CC9FBD /* TenorGifSearchTests.m */; };
 		BE77E0831E03DCBA00CC9FBD /* TenorGifSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0821E03DCBA00CC9FBD /* TenorGifSearchUITests.m */; };
+		BE77E0AF1E03DDDD00CC9FBD /* TenorGif.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0A41E03DDDD00CC9FBD /* TenorGif.m */; };
+		BE77E0B01E03DDDD00CC9FBD /* TenorGifResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0A61E03DDDD00CC9FBD /* TenorGifResponse.m */; };
+		BE77E0B11E03DDDD00CC9FBD /* TenorLoopedmp4.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0A81E03DDDD00CC9FBD /* TenorLoopedmp4.m */; };
+		BE77E0B21E03DDDD00CC9FBD /* TenorMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0AA1E03DDDD00CC9FBD /* TenorMedia.m */; };
+		BE77E0B31E03DDDD00CC9FBD /* TenorNanowebm.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0AC1E03DDDD00CC9FBD /* TenorNanowebm.m */; };
+		BE77E0B41E03DDDD00CC9FBD /* TenorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0AE1E03DDDD00CC9FBD /* TenorResult.m */; };
+		BE77E0B61E03DFA800CC9FBD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BE77E0B51E03DFA800CC9FBD /* Podfile */; };
+		BE77E0B91E03E1E900CC9FBD /* TenorSearchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77E0B81E03E1E900CC9FBD /* TenorSearchHandler.m */; };
+		BEB44B691E05202F00ED178B /* GifSelectViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB44B681E05202F00ED178B /* GifSelectViewControlller.m */; };
+		BED4A9821E03F37400F7AF9E /* TenorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED4A9811E03F37400F7AF9E /* TenorCollectionViewCell.m */; };
+		BED4A9851E03FEA500F7AF9E /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BED4A9841E03FEA500F7AF9E /* UIImage+animatedGIF.m */; };
+		E28BC09FDFA707F2CA5BD858 /* libPods-TenorGifSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F0FC8001ACE07DF364D030 /* libPods-TenorGifSearch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C63303134ACB78B36B612BC /* Pods-TenorGifSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearch/Pods-TenorGifSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		0E79764615F48C25F172A3EF /* libPods-TenorGifSearchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TenorGifSearchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2164CFD060E1ED9DBE77E3B3 /* libPods-TenorGifSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TenorGifSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECAB46FD854443445791103 /* Pods-TenorGifSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearchUITests/Pods-TenorGifSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41CDDB7BDDFBEA80C333FD1B /* Pods-TenorGifSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearchUITests/Pods-TenorGifSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E6E1431166D1D2F796854EB /* Pods-TenorGifSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearchTests/Pods-TenorGifSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7559C9C18DBF8C70228F6233 /* Pods-TenorGifSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearch/Pods-TenorGifSearch.release.xcconfig"; sourceTree = "<group>"; };
 		BE77E05A1E03DCB900CC9FBD /* TenorGifSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenorGifSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77E05E1E03DCB900CC9FBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE77E0601E03DCB900CC9FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +72,29 @@
 		BE77E07E1E03DCBA00CC9FBD /* TenorGifSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenorGifSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE77E0821E03DCBA00CC9FBD /* TenorGifSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenorGifSearchUITests.m; sourceTree = "<group>"; };
 		BE77E0841E03DCBA00CC9FBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE77E0A31E03DDDD00CC9FBD /* TenorGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorGif.h; sourceTree = "<group>"; };
+		BE77E0A41E03DDDD00CC9FBD /* TenorGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorGif.m; sourceTree = "<group>"; };
+		BE77E0A51E03DDDD00CC9FBD /* TenorGifResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorGifResponse.h; sourceTree = "<group>"; };
+		BE77E0A61E03DDDD00CC9FBD /* TenorGifResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorGifResponse.m; sourceTree = "<group>"; };
+		BE77E0A71E03DDDD00CC9FBD /* TenorLoopedmp4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorLoopedmp4.h; sourceTree = "<group>"; };
+		BE77E0A81E03DDDD00CC9FBD /* TenorLoopedmp4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorLoopedmp4.m; sourceTree = "<group>"; };
+		BE77E0A91E03DDDD00CC9FBD /* TenorMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorMedia.h; sourceTree = "<group>"; };
+		BE77E0AA1E03DDDD00CC9FBD /* TenorMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorMedia.m; sourceTree = "<group>"; };
+		BE77E0AB1E03DDDD00CC9FBD /* TenorNanowebm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorNanowebm.h; sourceTree = "<group>"; };
+		BE77E0AC1E03DDDD00CC9FBD /* TenorNanowebm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorNanowebm.m; sourceTree = "<group>"; };
+		BE77E0AD1E03DDDD00CC9FBD /* TenorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorResult.h; sourceTree = "<group>"; };
+		BE77E0AE1E03DDDD00CC9FBD /* TenorResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorResult.m; sourceTree = "<group>"; };
+		BE77E0B51E03DFA800CC9FBD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE77E0B71E03E1E900CC9FBD /* TenorSearchHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorSearchHandler.h; sourceTree = "<group>"; };
+		BE77E0B81E03E1E900CC9FBD /* TenorSearchHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorSearchHandler.m; sourceTree = "<group>"; };
+		BEB44B671E05202F00ED178B /* GifSelectViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifSelectViewControlller.h; sourceTree = "<group>"; };
+		BEB44B681E05202F00ED178B /* GifSelectViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifSelectViewControlller.m; sourceTree = "<group>"; };
+		BED4A9801E03F37400F7AF9E /* TenorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenorCollectionViewCell.h; sourceTree = "<group>"; };
+		BED4A9811E03F37400F7AF9E /* TenorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenorCollectionViewCell.m; sourceTree = "<group>"; };
+		BED4A9831E03FEA500F7AF9E /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		BED4A9841E03FEA500F7AF9E /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		D0F0FC8001ACE07DF364D030 /* libPods-TenorGifSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TenorGifSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D7F13AF64A446496D02EFF /* Pods-TenorGifSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenorGifSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TenorGifSearchTests/Pods-TenorGifSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28BC09FDFA707F2CA5BD858 /* libPods-TenorGifSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C723C4A846D649221E1D60 /* libPods-TenorGifSearchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +118,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7DFC8ABEDE6B697DFB34B2 /* libPods-TenorGifSearchUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06CF321556FDEDA848FFB8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C63303134ACB78B36B612BC /* Pods-TenorGifSearch.debug.xcconfig */,
+				7559C9C18DBF8C70228F6233 /* Pods-TenorGifSearch.release.xcconfig */,
+				4E6E1431166D1D2F796854EB /* Pods-TenorGifSearchTests.debug.xcconfig */,
+				F3D7F13AF64A446496D02EFF /* Pods-TenorGifSearchTests.release.xcconfig */,
+				2ECAB46FD854443445791103 /* Pods-TenorGifSearchUITests.debug.xcconfig */,
+				41CDDB7BDDFBEA80C333FD1B /* Pods-TenorGifSearchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE77E0511E03DCB900CC9FBD = {
 			isa = PBXGroup;
 			children = (
+				BE77E0B51E03DFA800CC9FBD /* Podfile */,
 				BE77E05C1E03DCB900CC9FBD /* TenorGifSearch */,
 				BE77E0761E03DCBA00CC9FBD /* TenorGifSearchTests */,
 				BE77E0811E03DCBA00CC9FBD /* TenorGifSearchUITests */,
 				BE77E05B1E03DCB900CC9FBD /* Products */,
+				B06CF321556FDEDA848FFB8A /* Pods */,
+				C7252E6CCB2E290C9D329824 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +164,17 @@
 		BE77E05C1E03DCB900CC9FBD /* TenorGifSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BE77E0901E03DD3900CC9FBD /* TENOR OBJECTS */,
 				BE77E0601E03DCB900CC9FBD /* AppDelegate.h */,
 				BE77E0611E03DCB900CC9FBD /* AppDelegate.m */,
+				BED4A9831E03FEA500F7AF9E /* UIImage+animatedGIF.h */,
+				BED4A9841E03FEA500F7AF9E /* UIImage+animatedGIF.m */,
 				BE77E0631E03DCB900CC9FBD /* ViewController.h */,
 				BE77E0641E03DCB900CC9FBD /* ViewController.m */,
+				BEB44B671E05202F00ED178B /* GifSelectViewControlller.h */,
+				BEB44B681E05202F00ED178B /* GifSelectViewControlller.m */,
+				BED4A9801E03F37400F7AF9E /* TenorCollectionViewCell.h */,
+				BED4A9811E03F37400F7AF9E /* TenorCollectionViewCell.m */,
 				BE77E0661E03DCB900CC9FBD /* Main.storyboard */,
 				BE77E0691E03DCB900CC9FBD /* Assets.xcassets */,
 				BE77E06B1E03DCB900CC9FBD /* LaunchScreen.storyboard */,
@@ -140,6 +210,37 @@
 			path = TenorGifSearchUITests;
 			sourceTree = "<group>";
 		};
+		BE77E0901E03DD3900CC9FBD /* TENOR OBJECTS */ = {
+			isa = PBXGroup;
+			children = (
+				BE77E0A31E03DDDD00CC9FBD /* TenorGif.h */,
+				BE77E0A41E03DDDD00CC9FBD /* TenorGif.m */,
+				BE77E0A51E03DDDD00CC9FBD /* TenorGifResponse.h */,
+				BE77E0A61E03DDDD00CC9FBD /* TenorGifResponse.m */,
+				BE77E0A71E03DDDD00CC9FBD /* TenorLoopedmp4.h */,
+				BE77E0A81E03DDDD00CC9FBD /* TenorLoopedmp4.m */,
+				BE77E0A91E03DDDD00CC9FBD /* TenorMedia.h */,
+				BE77E0AA1E03DDDD00CC9FBD /* TenorMedia.m */,
+				BE77E0AB1E03DDDD00CC9FBD /* TenorNanowebm.h */,
+				BE77E0AC1E03DDDD00CC9FBD /* TenorNanowebm.m */,
+				BE77E0AD1E03DDDD00CC9FBD /* TenorResult.h */,
+				BE77E0AE1E03DDDD00CC9FBD /* TenorResult.m */,
+				BE77E0B71E03E1E900CC9FBD /* TenorSearchHandler.h */,
+				BE77E0B81E03E1E900CC9FBD /* TenorSearchHandler.m */,
+			);
+			name = "TENOR OBJECTS";
+			sourceTree = "<group>";
+		};
+		C7252E6CCB2E290C9D329824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0FC8001ACE07DF364D030 /* libPods-TenorGifSearch.a */,
+				2164CFD060E1ED9DBE77E3B3 /* libPods-TenorGifSearchTests.a */,
+				0E79764615F48C25F172A3EF /* libPods-TenorGifSearchUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE77E0871E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearch" */;
 			buildPhases = (
+				A5942974F70FE01C6F6A359D /* [CP] Check Pods Manifest.lock */,
 				BE77E0561E03DCB900CC9FBD /* Sources */,
 				BE77E0571E03DCB900CC9FBD /* Frameworks */,
 				BE77E0581E03DCB900CC9FBD /* Resources */,
+				0E33DF9BE62B170E334BF101 /* [CP] Embed Pods Frameworks */,
+				1A952C1E52CDBE15A282A94D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE77E08A1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchTests" */;
 			buildPhases = (
+				216E177A7F548C6E5DB89427 /* [CP] Check Pods Manifest.lock */,
 				BE77E06F1E03DCBA00CC9FBD /* Sources */,
 				BE77E0701E03DCBA00CC9FBD /* Frameworks */,
 				BE77E0711E03DCBA00CC9FBD /* Resources */,
+				D38C37CCC9EF568F6DFD4E95 /* [CP] Embed Pods Frameworks */,
+				C5E08BE60F4E2B6FD3D0B8D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE77E08D1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchUITests" */;
 			buildPhases = (
+				F62E06970392CFBD81C1F596 /* [CP] Check Pods Manifest.lock */,
 				BE77E07A1E03DCBA00CC9FBD /* Sources */,
 				BE77E07B1E03DCBA00CC9FBD /* Frameworks */,
 				BE77E07C1E03DCBA00CC9FBD /* Resources */,
+				9C78AB634723F196F5AE927C /* [CP] Embed Pods Frameworks */,
+				9E3079779E492596DC9A446D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +317,7 @@
 				TargetAttributes = {
 					BE77E0591E03DCB900CC9FBD = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = WRBW3Z36M6;
 						ProvisioningStyle = Automatic;
 					};
 					BE77E0721E03DCBA00CC9FBD = {
@@ -248,6 +359,7 @@
 			files = (
 				BE77E06D1E03DCB900CC9FBD /* LaunchScreen.storyboard in Resources */,
 				BE77E06A1E03DCB900CC9FBD /* Assets.xcassets in Resources */,
+				BE77E0B61E03DFA800CC9FBD /* Podfile in Resources */,
 				BE77E0681E03DCB900CC9FBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +380,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E33DF9BE62B170E334BF101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearch/Pods-TenorGifSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A952C1E52CDBE15A282A94D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearch/Pods-TenorGifSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		216E177A7F548C6E5DB89427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C78AB634723F196F5AE927C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearchUITests/Pods-TenorGifSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3079779E492596DC9A446D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearchUITests/Pods-TenorGifSearchUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5942974F70FE01C6F6A359D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5E08BE60F4E2B6FD3D0B8D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearchTests/Pods-TenorGifSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D38C37CCC9EF568F6DFD4E95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TenorGifSearchTests/Pods-TenorGifSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62E06970392CFBD81C1F596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE77E0561E03DCB900CC9FBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE77E0651E03DCB900CC9FBD /* ViewController.m in Sources */,
+				BED4A9851E03FEA500F7AF9E /* UIImage+animatedGIF.m in Sources */,
+				BE77E0B31E03DDDD00CC9FBD /* TenorNanowebm.m in Sources */,
 				BE77E0621E03DCB900CC9FBD /* AppDelegate.m in Sources */,
+				BED4A9821E03F37400F7AF9E /* TenorCollectionViewCell.m in Sources */,
+				BE77E0B91E03E1E900CC9FBD /* TenorSearchHandler.m in Sources */,
+				BEB44B691E05202F00ED178B /* GifSelectViewControlller.m in Sources */,
 				BE77E05F1E03DCB900CC9FBD /* main.m in Sources */,
+				BE77E0B01E03DDDD00CC9FBD /* TenorGifResponse.m in Sources */,
+				BE77E0AF1E03DDDD00CC9FBD /* TenorGif.m in Sources */,
+				BE77E0B11E03DDDD00CC9FBD /* TenorLoopedmp4.m in Sources */,
+				BE77E0B41E03DDDD00CC9FBD /* TenorResult.m in Sources */,
+				BE77E0B21E03DDDD00CC9FBD /* TenorMedia.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,9 +682,12 @@
 		};
 		BE77E0881E03DCBA00CC9FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C63303134ACB78B36B612BC /* Pods-TenorGifSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WRBW3Z36M6;
 				INFOPLIST_FILE = TenorGifSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,9 +696,12 @@
 		};
 		BE77E0891E03DCBA00CC9FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7559C9C18DBF8C70228F6233 /* Pods-TenorGifSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WRBW3Z36M6;
 				INFOPLIST_FILE = TenorGifSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naga.TenorGifSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +710,7 @@
 		};
 		BE77E08B1E03DCBA00CC9FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6E1431166D1D2F796854EB /* Pods-TenorGifSearchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TenorGifSearchTests/Info.plist;
@@ -456,6 +723,7 @@
 		};
 		BE77E08C1E03DCBA00CC9FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D7F13AF64A446496D02EFF /* Pods-TenorGifSearchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TenorGifSearchTests/Info.plist;
@@ -468,6 +736,7 @@
 		};
 		BE77E08E1E03DCBA00CC9FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECAB46FD854443445791103 /* Pods-TenorGifSearchUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TenorGifSearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -479,6 +748,7 @@
 		};
 		BE77E08F1E03DCBA00CC9FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41CDDB7BDDFBEA80C333FD1B /* Pods-TenorGifSearchUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TenorGifSearchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +777,7 @@
 				BE77E0891E03DCBA00CC9FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE77E08A1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +786,7 @@
 				BE77E08C1E03DCBA00CC9FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE77E08D1E03DCBA00CC9FBD /* Build configuration list for PBXNativeTarget "TenorGifSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +795,7 @@
 				BE77E08F1E03DCBA00CC9FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

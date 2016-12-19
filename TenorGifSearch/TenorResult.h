@@ -12,19 +12,19 @@
 
 @interface TenorResult : NSObject
 
-@property (nonatomic, strong) NSObject * composite;
+@property (nonatomic, strong) NSString * composite;
 @property (nonatomic, assign) CGFloat created;
 @property (nonatomic, assign) BOOL hasaudio;
 @property (nonatomic, assign) BOOL hascaption;
 @property (nonatomic, strong) NSString * idField;
 @property (nonatomic, strong) NSString * itemurl;
-@property (nonatomic, strong) NSArray * media;
+@property (nonatomic, strong) NSArray <TenorMedia *>* media;
 @property (nonatomic, assign) NSInteger shares;
 @property (nonatomic, strong) NSArray * tags;
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * url;
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
-
 -(NSDictionary *)toDictionary;
+- (instancetype)copyWithZone:(NSZone *)zone;
 @end

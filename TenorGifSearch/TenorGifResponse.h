@@ -13,10 +13,11 @@
 @interface TenorGifResponse : NSObject
 
 @property (nonatomic, strong) NSString * next;
-@property (nonatomic, strong) NSArray * results;
+@property (nonatomic, strong) NSArray<TenorResult *> * results;
 @property (nonatomic, strong) NSString * weburl;
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)toDictionary;
+- (instancetype)copyWithZone:(NSZone *)zone;
 @end
