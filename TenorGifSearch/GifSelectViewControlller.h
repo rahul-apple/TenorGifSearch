@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TenorResult.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <AFNetworking/AFNetworking.h>
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 @interface GifSelectViewControlller : UIViewController{
@@ -16,8 +17,12 @@
 }
 
 @property (nonatomic, strong) NSData *imageData;
--(void)showImageFromView:(CGRect)intialFrame withObject:(TenorResult *)object;
+@property (weak, nonatomic) IBOutlet UIButton *cancel;
 @property (weak, nonatomic) IBOutlet UIButton *done;
+
 - (IBAction)doneAction:(id)sender;
+- (IBAction)cancelAction:(id)sender;
+
+-(void)showImageFromView:(CGRect)intialFrame withObject:(TenorResult *)object;
 
 @end

@@ -31,7 +31,19 @@
 }
 
 -(void)searchTenorWithKeyWord:(NSString *)keyString onSuccess:(void(^)(id responseObject,NSString *keyWord))onSuccess andOnError:(void(^)(id responseObject,NSString *keyWord,NSError *error))onError{
-    [manager GET:[NSString stringWithFormat:@"%@/%@",BASE_SEARCH_URL,API_KEY] parameters:@{@"tag":keyString,@"limit":@50} progress:^(NSProgress * _Nonnull downloadProgress) {
+    
+    NSString *urlString;
+    NSDictionary *dict;
+
+    if (keyString==nil) {
+        urlString = [NSString stringWithFormat:@"https://api.tenor.co/v1/trending?%@",API_KEY];
+        dict = @{};
+    }else{
+        urlString = [NSString stringWithFormat:@"%@/%@",BASE_SEARCH_URL,API_KEY];
+        dict = @{@"tag":keyString,@"limit":@50};
+    }
+    
+    [manager GET:urlString parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {
         NSLog(@"API Progress..%f",downloadProgress.fractionCompleted);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         onSuccess(responseObject,keyString);

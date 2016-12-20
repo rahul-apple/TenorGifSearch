@@ -22,6 +22,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NormalFrame = CGRectMake(0, (SCREEN_HEIGHT-SCREEN_WIDTH)/2, SCREEN_WIDTH, SCREEN_WIDTH);
+    [self.done.layer setCornerRadius:3.0f];
+    [self.done.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.done.layer setBorderWidth:0.8f];
+    [self.cancel.layer setCornerRadius:3.0f];
+    [self.cancel.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.cancel.layer setBorderWidth:0.8f];
+    imgView.contentMode = UIViewContentModeScaleAspectFit;
+
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -55,20 +63,68 @@
 }
 
 -(void)loadGudQualityGif{
+    NSString *imgUrl = result.media[0].gif.url;
+//    NSString *location = [self filePathForGIF:imgUrl].absoluteString;
     
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeIndeterminate;
+        NSData *dataSaved = [NSData dataWithContentsOfURL:[self filePathForGIF:imgUrl]];
+    if (dataSaved) {
+        FLAnimatedImage *image1 = [FLAnimatedImage animatedImageWithGIFData:dataSaved];
+        imgView.animatedImage = image1;
+    }else{
+    
+
+    
+    
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:imgView animated:false];
+    hud.mode = MBProgressHUDModeDeterminate;
     hud.label.text = @"Loading";
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSData *data =[NSData dataWithContentsOfURL:[NSURL URLWithString:result.media[0].gif.url]];
+        hud.userInteractionEnabled = true;
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:imgUrl];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        hud.progressObject = downloadProgress;
+        
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        NSString *exclude_Extension = [[response suggestedFilename] pathExtension];
+        NSString *exclude_url = [imgUrl stringByDeletingLastPathComponent];
+        NSString *filename = [NSString stringWithFormat:@"%@.%@",[exclude_url lastPathComponent],exclude_Extension];
+        return [documentsDirectoryURL URLByAppendingPathComponent:filename];
+
+            } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+                if (!error) {
+                    NSLog(@"File downloaded to: %@", filePath);
+                    NSData *data = [NSData dataWithContentsOfFile:filePath.path];
+                    FLAnimatedImage *image1 = [FLAnimatedImage animatedImageWithGIFData:data];
+                    imgView.animatedImage = image1;
+                }else{
+                    [self dismissViewControllerAnimated:true completion:nil];
+                }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            [hud hideAnimated:YES];
+            [hud hideAnimated:true];
         });
-        if (data) {
-            FLAnimatedImage *image1 = [FLAnimatedImage animatedImageWithGIFData:data];
-            imgView.animatedImage = image1;
-        }
-    });
+    }];
+    [downloadTask resume];
+    
+    
+    }
+}
+
+
+- (NSURL *)filePathForGIF:(NSString *)file{
+    NSString *exclude_Extension = @"gif";
+    NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+    NSString *exclude_url = [file stringByDeletingLastPathComponent];
+    NSString *filename = [NSString stringWithFormat:@"%@.%@",[exclude_url lastPathComponent],exclude_Extension];
+    return [documentsDirectoryURL URLByAppendingPathComponent:filename];
+
 }
 
 /*
@@ -82,6 +138,10 @@
 */
 
 - (IBAction)doneAction:(id)sender {
+//    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+- (IBAction)cancelAction:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
 }
 @end

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -48,7 +47,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-cj-yfc" customClass="FLAnimatedImageView">
-                                                    <rect key="frame" x="1" y="1" width="120" height="119"/>
+                                                    <rect key="frame" x="1" y="1" width="120" height="120"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -103,33 +102,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa6-5O-ufV">
-                                <rect key="frame" x="277" y="28" width="82" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Yw-nF2">
+                                <rect key="frame" x="285" y="20" width="74" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="N8c-me-TSZ"/>
-                                    <constraint firstAttribute="height" constant="30" id="rbZ-Fr-CdQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="ThA-rc-ZBp"/>
+                                    <constraint firstAttribute="width" constant="74" id="exG-Cr-ef2"/>
                                 </constraints>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneAction:" destination="62R-2v-5X3" eventType="touchUpInside" id="aO6-2B-6qo"/>
+                                    <action selector="doneAction:" destination="62R-2v-5X3" eventType="touchUpInside" id="4bj-qZ-jAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ9-Fj-Jz2">
+                                <rect key="frame" x="16" y="20" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="810-Im-Laq"/>
+                                    <constraint firstAttribute="width" constant="74" id="pp4-Do-ugN"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="62R-2v-5X3" eventType="touchUpInside" id="Pq2-GQ-4XW"/>
+                                    <action selector="doneAction:" destination="62R-2v-5X3" eventType="touchUpInside" id="M7P-0f-Mo7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fa6-5O-ufV" firstAttribute="trailing" secondItem="xzg-Yj-WPG" secondAttribute="trailingMargin" id="16k-zF-yJx"/>
-                            <constraint firstItem="fa6-5O-ufV" firstAttribute="top" secondItem="yhX-s2-djz" secondAttribute="bottom" constant="8" id="N4L-gM-qw2"/>
+                            <constraint firstItem="mja-Yw-nF2" firstAttribute="top" secondItem="yhX-s2-djz" secondAttribute="bottom" id="LQZ-dq-0nn"/>
+                            <constraint firstItem="qJ9-Fj-Jz2" firstAttribute="top" secondItem="yhX-s2-djz" secondAttribute="bottom" id="l7m-Pe-kH1"/>
+                            <constraint firstItem="qJ9-Fj-Jz2" firstAttribute="leading" secondItem="xzg-Yj-WPG" secondAttribute="leading" constant="16" id="sp2-kr-anf"/>
+                            <constraint firstAttribute="trailing" secondItem="mja-Yw-nF2" secondAttribute="trailing" constant="16" id="upZ-Ys-chE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="done" destination="fa6-5O-ufV" id="0fc-A7-NRn"/>
+                        <outlet property="cancel" destination="qJ9-Fj-Jz2" id="8wI-sL-09P"/>
+                        <outlet property="done" destination="mja-Yw-nF2" id="Uuo-eC-2dT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy0-dC-ZOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="2250.4000000000001" y="31.03448275862069"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8GX-X5-c63">

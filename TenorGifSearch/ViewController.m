@@ -12,6 +12,7 @@
    
     CGSize cellSize;
     TenorGifResponse *tnResponse;
+    MBProgressHUD *hud;
     
 }
 @property (nonatomic, strong) NSOperationQueue *imageOperationQueue;
@@ -25,16 +26,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.label.text = @"Loading";
+
     self.imageCache = [[NSCache alloc]init];
     self.imageCache.countLimit = 50;
     self.imageOperationQueue = [[NSOperationQueue alloc]init];
     self.imageOperationQueue.maxConcurrentOperationCount = 5;
     handler = [TenorSearchHandler sharedManager];
     searchBarC.delegate = self;
-    [handler searchTenorWithKeyWord:@"Cat" onSuccess:^(id responseObject, NSString *keyWord) {
+    [handler searchTenorWithKeyWord:nil onSuccess:^(id responseObject, NSString *keyWord) {
         NSLog(@"RESPONSE OBJECT : %@",responseObject);
         tnResponse = [[TenorGifResponse alloc]initWithDictionary:responseObject];
         [_collectionView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [hud hideAnimated:YES];
+        });
+
     } andOnError:^(id responseObject, NSString *keyWord, NSError *error) {
         NSLog(@"ERROR OCCURED: %@",[error localizedDescription]);
     }];
@@ -59,10 +68,19 @@
 }
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     if (searchBarC.text.length>0) {
+        
+        
         [handler searchTenorWithKeyWord:searchBarC.text onSuccess:^(id responseObject, NSString *keyWord) {
             NSLog(@"RESPONSE OBJECT : %@",responseObject);
-            tnResponse = [[TenorGifResponse alloc]initWithDictionary:responseObject];
-            [_collectionView reloadData];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // code here
+                tnResponse = [[TenorGifResponse alloc]initWithDictionary:responseObject];
+                [_collectionView reloadData];
+                [hud hideAnimated:YES];
+            });
+            
+
         } andOnError:^(id responseObject, NSString *keyWord, NSError *error) {
             NSLog(@"ERROR OCCURED: %@",[error localizedDescription]);
         }];
